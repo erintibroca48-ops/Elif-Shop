@@ -19,7 +19,7 @@ export default function Header({ search, setsearch }) {
 
     const t = {
         sq: {
-            home: "Hoe",
+            home: "Home",
             products: "Produkte",
             custom: "Personalizime",
             contact: "Kontakto",
