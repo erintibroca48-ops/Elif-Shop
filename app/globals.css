@@ -24,3 +24,15 @@ body {
   color: var(--foreground);
   font-family: Arial, Helvetica, sans-serif;
 }
+
+.card-zoom {
+  transform: scale(0.92);
+  opacity: 0.7;
+  transition: transform 0.9s ease, opacity 0.9s ease;
+  will-change: transform;
+}
+
+.card-zoom.active {
+  transform: scale(1);
+  opacity: 1;
+} 
