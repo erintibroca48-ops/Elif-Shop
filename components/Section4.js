@@ -165,7 +165,7 @@ export default function Section4() {
                         </a>
 
                         <a
-                            href="https://maps.app.goo.gl/cbK9LtsyhPp9wCFcA"
+                            href="https://share.google/URFlDF3PWEGVN69p5"
                             className="flex flex-col justify-between border-1 border-black bg-white/90 hover:bg-white/10 w-full h-auto gap-10 px-5 md:px-10 py-10">
 
                             <div className="flex items-center justify-between w-full">
