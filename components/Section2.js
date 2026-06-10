@@ -11,7 +11,7 @@ export default function Section2() {
     const text = {
         sq: {
             parfume: {
-                title: "Parfum",
+                title: "Parfume",
                 desc: "Parfumet më të mira do ti gjeni tek ne me cmime shumë të arsyeshme."
             },
             canta: {
