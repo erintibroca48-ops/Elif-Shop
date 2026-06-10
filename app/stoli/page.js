@@ -246,25 +246,38 @@ export default function Stolit() {
 
                 {selectedIndex !== null && (
                     <div className="fixed inset-0 bg-black/90 flex items-center justify-center z-50">
-                        <div ref={modalRef} className="relative flex items-center justify-center">
-
-                            <button onClick={() => setSelectedIndex(null)}>
+                        <div
+                            ref={modalRef}
+                            className="relative flex items-center justify-center"
+                        >
+                            <button
+                                onClick={() => setSelectedIndex(null)}
+                                className="absolute top-[-50px] right-0 text-white hover:scale-110 transition"
+                            >
                                 <X size={32} />
                             </button>
 
-                            <button onClick={prevImage}>
+                            <button
+                                onClick={prevImage}
+                                className="absolute left-2 sm:left-4 md:left-[-60px] bg-black/50 p-2 rounded-full text-white hover:scale-110 transition"
+                            >
                                 <ChevronLeft size={28} />
                             </button>
 
-                            <img
-                                src={allImages[selectedIndex]}
-                                className="w-[90vw] max-w-4xl h-[70vh] object-contain"
-                            />
+                            <div className="w-[90vw] max-w-4xl h-[70vh] flex items-center justify-center">
+                                <img
+                                    src={allImages[selectedIndex]}
+                                    className="w-full h-full object-contain rounded-2xl shadow-2xl"
+                                    alt="Punim dore"
+                                />
+                            </div>
 
-                            <button onClick={nextImage}>
+                            <button
+                                onClick={nextImage}
+                                className="absolute right-2 sm:right-4 md:right-[-60px] bg-black/50 p-2 rounded-full text-white hover:scale-110 transition"
+                            >
                                 <ChevronRight size={28} />
                             </button>
-
                         </div>
                     </div>
                 )}
