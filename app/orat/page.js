@@ -124,7 +124,7 @@ export default function Orat() {
                                 <div
                                     key={index}
                                     onClick={() => setSelectedIndex(index)}
-                                    className="w-40 md:w-60 overflow-hidden shadow-lg cursor-pointer group items-center justify-center"
+                                    className="flex flex-col items-center justify-center overflow-hidden shadow-lg cursor-pointer group mx-auto w-full max-w-[240px]"
                                 >
                                     <img
                                         src={img}
@@ -144,7 +144,7 @@ export default function Orat() {
                                 <div
                                     key={index}
                                     onClick={() => setSelectedIndex(index + images.length)}
-                                    className="w-40 md:w-60 overflow-hidden shadow-lg cursor-pointer group items-center justify-center"
+                                    className="flex flex-col items-center justify-center overflow-hidden shadow-lg cursor-pointer group mx-auto w-full max-w-[240px]"
                                 >
                                     <img
                                         src={img}
