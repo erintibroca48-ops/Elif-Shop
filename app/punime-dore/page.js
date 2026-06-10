@@ -202,7 +202,7 @@ export default function Orat() {
                             <div className="w-[90vw] max-w-4xl h-[70vh] flex items-center justify-center">
                                 <img
                                     src={allImages[selectedIndex]}
-                                    className="w-full h-full object-contain rounded-2xl shadow-2xl"
+                                    className="w-full h-full object-contain shadow-2xl"
                                     alt="Punim dore"
                                 />
                             </div>
