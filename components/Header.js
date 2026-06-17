@@ -159,9 +159,9 @@ export default function Header({ search, setsearch }) {
                     onClick={() => setopenmenu(!openmenu)}
                 >
                     {openmenu ? (
-                        <X className="w-7 h-7" />
+                        <X className="w-5 md:w-7 h-auto" />
                     ) : (
-                        <Menu className="w-7 h-7" />
+                        <Menu className="w-5 md:w-7 h-auto" />
                     )}
                 </div>
 
@@ -170,7 +170,7 @@ export default function Header({ search, setsearch }) {
                     <Link href="/" className="flex items-center gap-2">
                         <img
                             src="/Elif-Shop.webp"
-                            className="border-[0.1px] rounded-sm border-gray-900 w-12 h-12"
+                            className="border-[0.1px] rounded-sm border-gray-900 w-8 md:w-12 h-auto"
                             alt="logo"
                         />
 
@@ -218,11 +218,11 @@ export default function Header({ search, setsearch }) {
                     <div
                         className={`
                                     transition-all duration-300 overflow-hidden
-                                    ${openSearch ? "w-14 md:w-18 lg:w-24 opacity-100" : "w-0 opacity-0"}
+                                    ${openSearch ? "w-20 md:w-18 lg:w-24 opacity-100" : "w-0 opacity-0"}
                                     `}
                     >
                         <input
-                            className="w-14 md:w-18 lg:w-24 border border-gray-300 px-1 md:px-3 py-2 text-sm outline-none rounded-sm"
+                            className="w-20 md:w-18 lg:w-24 border border-gray-300 px-1 md:px-3 py-1 md:py-2 text-sm outline-none rounded-sm"
                             type="text"
                             placeholder={get("search")}
                             value={search}
@@ -246,16 +246,20 @@ export default function Header({ search, setsearch }) {
                         {openlang && (
                             <div
                                 onClick={(e) => e.stopPropagation()}
-                                className="absolute md:top-12 top-8 right-[-5px] flex flex-col gap-2 bg-white border shadow-md p-2 rounded"
+                                className="absolute md:top-12 top-8 right-[-5px] flex flex-col gap-1 bg-white border shadow-md rounded-lg w-max overflow-hidden"
                             >
+                                <h2 className="text-md font-mono border-b font-light text-amber-400 bg-black text-center p-4 tracking-widest leading-loose">
+                                    LANGUAGE
+                                </h2>
+
                                 <button
                                     onClick={() => {
                                         setLang("sq");
                                         setopenlang(false);
                                     }}
-                                    className={`py-0.5 ${lang === "sq"
-                                        ? "font-bold text-black border-b border-black cursor-pointer"
-                                        : "text-gray-500 hover:text-black"
+                                    className={`px-8 py-2 whitespace-nowrap text-left transition-all ${lang === "sq"
+                                            ? "font-bold text-black bg-amber-400 rounded-lg"
+                                            : "text-gray-500 hover:text-black hover:bg-gray-100"
                                         }`}
                                 >
                                     SQ - Shqip
@@ -266,9 +270,9 @@ export default function Header({ search, setsearch }) {
                                         setLang("en");
                                         setopenlang(false);
                                     }}
-                                    className={`py-0.5 ${lang === "en"
-                                        ? "font-bold text-black border-b border-black cursor-pointer"
-                                        : "text-gray-500 hover:text-black"
+                                    className={`px-8 py-2 whitespace-nowrap text-left transition-all ${lang === "en"
+                                            ? "font-bold text-black bg-amber-400 rounded-lg"
+                                            : "text-gray-500 hover:text-black hover:bg-gray-100"
                                         }`}
                                 >
                                     EN - English
@@ -279,9 +283,9 @@ export default function Header({ search, setsearch }) {
                                         setLang("it");
                                         setopenlang(false);
                                     }}
-                                    className={`py-0.5 ${lang === "it"
-                                        ? "font-bold text-black border-b border-black cursor-pointer"
-                                        : "text-gray-500 hover:text-black"
+                                    className={`px-8 py-2 whitespace-nowrap text-left transition-all ${lang === "it"
+                                            ? "font-bold text-black bg-amber-400 rounded-lg"
+                                            : "text-gray-500 hover:text-black hover:bg-gray-100"
                                         }`}
                                 >
                                     IT - Italiano
