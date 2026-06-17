@@ -102,9 +102,9 @@ export default function Section4() {
                     </p>
 
                     <a href="https://instagram.com/elif.silvershop1" target="_blank" rel="noopener noreferrer"
-                        className=" rounded-sm bg-white/30 hover:bg-white/50 px-2 py-2 w-fit">
+                        className=" rounded-md bg-white/40 hover:bg-white/70 px-2 py-2 w-fit">
                         <img src="/Instagram.webp"
-                            className="w-8 h-8 rounded-md" />
+                            className="w-8 h-8 rounded-lg" />
                     </a>
                 </div>
 
@@ -212,18 +212,6 @@ export default function Section4() {
                         </div>
                     </div>
 
-                    <a
-                        href="https://instagram.com/elif.silvershop1"
-                        target="_blank"
-                        rel="noopener noreferrer"
-                        className="rounded-md bg-white/70 p-2 w-fit hover:bg-white transition"
-                    >
-                        <img
-                            src="/Instagram.webp"
-                            className="w-5 h-5 rounded-md"
-                            alt="Instagram"
-                        />
-                    </a>
                 </div>
 
                 <div className="flex flex-col items-start w-full lg:w-1/4">
