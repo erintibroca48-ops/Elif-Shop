@@ -218,11 +218,11 @@ export default function Header({ search, setsearch }) {
                     <div
                         className={`
                                     transition-all duration-300 overflow-hidden
-                                    ${openSearch ? "w-20 md:w-18 lg:w-24 opacity-100" : "w-0 opacity-0"}
+                                    ${openSearch ? "w-20 md:w-18 lg:w-44 opacity-100" : "w-0 opacity-0"}
                                     `}
                     >
                         <input
-                            className="w-20 md:w-18 lg:w-24 border border-gray-300 px-1 md:px-3 py-1 md:py-2 text-sm outline-none rounded-sm"
+                            className="w-20 md:w-18 lg:w-44 border border-gray-300 px-1 md:px-3 py-1 md:py-2 text-sm outline-none rounded-sm"
                             type="text"
                             placeholder={get("search")}
                             value={search}
