@@ -60,7 +60,7 @@ export default function Syzet() {
         <>
             <Header search={search} setsearch={setsearch} />
 
-            <div className="bg-black/10 py-12 px-4 mt-20">
+            <div className="bg-black/10 py-12 px-4 mt-14 md:mt-20">
                 <div className="max-w-7xl mx-auto flex flex-col gap-5 items-center justify-center">
                     <h1 className="text-3xl md:text-4xl font-normal font-serif text-center">
                         ELIF SUNGLASSES

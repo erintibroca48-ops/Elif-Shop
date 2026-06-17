@@ -299,7 +299,7 @@ export default function Header({ search, setsearch }) {
 
             {openmenu && (
                 <div
-                    className="fixed top-15 md:top-17 left-0 w-full h-full z-50 flex justify-center"
+                    className="fixed top-14 md:top-17 left-0 w-full h-full z-50 flex justify-center"
                     onClick={() => setopenmenu(false)}
                 >
                     <div

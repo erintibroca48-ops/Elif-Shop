@@ -85,7 +85,7 @@ export default function Parfumet() {
         <>
             <Header search={search} setsearch={setsearch} />
 
-            <div className="bg-black/10 py-12 px-4 mt-20">
+            <div className="bg-black/10 py-12 px-4 mt-14 md:mt-20">
 
                 <div className="max-w-7xl mx-auto flex flex-col gap-5 items-center justify-center">
 
